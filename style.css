@@ -44,3 +44,49 @@ button:hover {
     justify-content: center;
 }
 
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+#form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#input {
+    padding: 8px;
+}
+
+#submit {
+    padding: 8px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #45a049;
+}
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img-container img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-container img:hover {
+    transform: scale(1.1);
+}

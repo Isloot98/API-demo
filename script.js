@@ -15,8 +15,13 @@ const search = async (queryParam) => {
     let data = await response.json();
     console.log(data.results);
 
+
+    imageContainer.innerHTML = '';
+
+    for (let i = 0; i < data.results.length; i++) {
     let img = document.createElement('img');
-    img.src = data.results[0].urls.regular;
+    img.src = data.results[i].urls.regular;
     imageContainer.appendChild(img);
+    }
 
 }
